@@ -1,0 +1,27 @@
+{
+  "name": "tech_motos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^8.0.5",
+    "@babel/preset-env": "^8.0.5",
+    "@babel/preset-typescript": "^8.0.1",
+    "@jest/globals": "^30.5.1",
+    "@types/jest": "^30.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/prompt-sync": "^4.2.3",
+    "babel-jest": "^30.5.1",
+    "jest": "^30.5.1",
+    "prompt-sync": "^4.2.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

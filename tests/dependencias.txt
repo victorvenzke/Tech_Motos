@@ -1,0 +1,5 @@
+1 npm i                                                                                                                                                                                                                                  
+2 npm install --save-dev jest                                                                                                                                                                                                            
+3 npm install --save-dev babel-jest @babel/core @babel/preset-env                                                                                                                                                                        
+4 npm install --save-dev @babel/preset-typescript           
+5 npm install --save-dev @jest/globals                   
