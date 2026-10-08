@@ -30,9 +30,6 @@ export class Sistema {
         return total;
     }
 
-
-
-
     alterarDadosMoto(        
         placa: string,
         novaMarca?: string,
@@ -60,7 +57,6 @@ export class Sistema {
             cliente.nome = novoNome;
             cliente.endereco = novoEndereco;
             cliente.telefone = novoTelefone;
-            cliente.idade = novaIdade;
             console.log("Dados do cliente alterados com sucesso!");
         } else {
             console.log("Cliente não encontrado.");

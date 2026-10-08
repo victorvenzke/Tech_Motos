@@ -1,40 +1,51 @@
 
 export class Cliente {
-    nome: string = "";
-    idade: number = 0;
-    cpf: number = 0;
-    endereco: string = "";
-    telefone: string = "";
+    private _nome: string = "";
+    private _cpf: number = 0;
+    private _endereco: string = "";
+    private _telefone: string = "";
 
 
-constructor (nome: string, idade: number, cpf: number, endereco: string, telefone: string){
-    this.nome = nome;
-    this.idade = idade;
-    this.cpf = cpf;
-    this.endereco = endereco;
-    this.telefone = telefone;
+constructor (nome: string, cpf: number, endereco: string, telefone: string){
+    this._nome = nome
+    this._cpf = cpf
+    this._endereco = endereco
+    this._telefone = telefone
     }
 
+    
+    get nome(): string {
+        return this._nome;
+    }
+    set nome(novoNome: string) {
+        this._nome = novoNome;
+    }
 
+    get cpf(): number {
+        return this._cpf;
+    }
 
-validarTelefone (telefone: string): void {
-    this.telefone = telefone;
-    if (telefone.toString().length < 10 || telefone.toString().length > 11) {
-        throw new Error ("Telefone Inválido ")
+    get endereco(): string {
+        return this._endereco;
+    }
+    set endereco(novoEndereco: string) {
+        this._endereco = novoEndereco;
+    }
+
+    get telefone(): string {
+        return this._telefone;
+    }
+    set telefone(novoTelefone: string) {
+        if (novoTelefone.length < 10 || novoTelefone.length > 11) {
+            throw new Error("Telefone inválido");
+        }
+        this._telefone = novoTelefone;
     }
 }
 
-atualizarTelefone (novoTelefone : string): void {
-    this.telefone = novoTelefone;
-    this.validarTelefone(novoTelefone);
-
-}
-
-atualizarEndereco (novoEndereco : string): void {
-    this.endereco = novoEndereco;
-
-}
 
 
 
-}
+
+
+
