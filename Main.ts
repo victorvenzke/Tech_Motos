@@ -61,7 +61,7 @@ console.log("==============================\n");
             console.log("1 - Adicionar Moto")
             console.log("2 - Alterar Moto")
             console.log("3 - Excluir Moto")
-            console.log("4 - Sair")
+            console.log("4 - Voltar")
         
             const opcao = teclado ("Escolha uma opção: ")
 
@@ -98,7 +98,7 @@ console.log("==============================\n");
         break;
 
     case "4":
-        console.log("Saindo...");
+        console.log("Voltando...");
         break;
 
     default:
