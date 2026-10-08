@@ -1,10 +1,12 @@
 import {Moto} from "./Moto.ts";
 import {Cliente} from "./Cliente.ts";
 import {Sistema} from "./Sistema.ts";
+import { Estoque } from "./Estoque.ts";
 import prompt from "prompt-sync";
 
 const sistema = new Sistema();
-const teclado = prompt ();
+const estoque = new Estoque(sistema.motos);
+const teclado = prompt();
 
 console.log("\n==============================");
 console.log("BEM-VINDO À TECH MOTOS");
@@ -50,7 +52,8 @@ console.log("==============================\n");
                 const cpf = Number(teclado ("Qual o seu CPF?"));
                 const endereco = teclado ("Digite o seu endereço: ");      
                 const telefone = teclado("Digite seu telefone: ");             
-                const novoCliente = new Cliente(nome, cpf, endereco, telefone); sistema.adicionarCliente(novoCliente);
+                const novoCliente = new Cliente(nome, cpf, endereco, telefone, false); 
+                sistema.adicionarCliente(novoCliente);
                 console.log("Cadastro feito com sucesso!!");
                 break;
             } else {

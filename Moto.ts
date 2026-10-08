@@ -5,6 +5,7 @@ export class Moto {
     private _valor: number = 0;
     private _promocao: boolean = true;
     private _placa: string = "";
+    private _tipo: string = "";
 
     constructor(marca: string, modelo: string, ano: number, valor: number, promocao: boolean, placa: string) {
         this._marca = marca;
@@ -13,6 +14,7 @@ export class Moto {
         this._valor = valor;
         this._promocao = promocao;
         this._placa = placa;
+        this._tipo = tipo;
     }
 
     get marca(): string {
@@ -58,6 +60,11 @@ export class Moto {
 
     get placa(): string {
         return this._placa;
+    }
+
+
+    get tipo(): string {
+        return this._tipo;
     }
 
     aplicarDesconto(percentual: number): void {

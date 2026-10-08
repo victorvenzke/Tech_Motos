@@ -4,13 +4,15 @@ export class Cliente {
     private _cpf: number = 0;
     private _endereco: string = "";
     private _telefone: string = "";
+    private _status: boolean = true;
 
 
-constructor (nome: string, cpf: number, endereco: string, telefone: string){
+constructor (nome: string, cpf: number, endereco: string, telefone: string,status: boolean){
     this._nome = nome
     this._cpf = cpf
     this._endereco = endereco
     this._telefone = telefone
+    this._status = status
     }
 
     
