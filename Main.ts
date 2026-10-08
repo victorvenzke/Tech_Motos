@@ -10,8 +10,6 @@ console.log("\n==============================");
 console.log("BEM-VINDO À TECH MOTOS");
 console.log("==============================\n");
 
-const menu = teclado("Escolha uma opção: ");
-
 console.log("\n==============================");
 console.log("MENU PRINCÍPAL");
 console.log("==============================\n");
@@ -20,6 +18,8 @@ console.log ("1 - Cadastro de Clientes")
 console.log ("2 - Cadastro de Motos")
 console.log ("3 - Buscar Motos")
 console.log ("4 - Sair" )
+
+const menu = teclado("Escolha uma opção: ");
 
 console.log("==============================\n");
 
